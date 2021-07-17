@@ -13,27 +13,23 @@
 			crossorigin="anonymous"
 		></script>
 		<title>Typing Text</title>
-		<link rel="stylesheet" href="css/style.css" />
-		<link rel="stylesheet" href="css/menu.css" />
+		<link rel="stylesheet" href="../css/style.css" />
+		<link rel="stylesheet" href="../css/menu.css" />
 	</head>
 	<body>
 		<div class="menu">
 			<ul>
 				<li>
-					<a href="index.html"> <i class="fas fa-chalkboard"> </i> Inicio </a>
+					<a href="../index.html"> <i class="fas fa-chalkboard"> </i> Inicio </a>
 				</li>
 				<li>
-					<a href="/pages/binary.html">
-						<i class="fas fa-calculator"></i> Converd Binary</a
-					>
+					<a href="binary.html"> <i class="fas fa-calculator"></i> Converd Binary</a>
 				</li>
 				<li>
-					<a href="/pages/letter.html"> <i class="fas fa-archive"></i> Max letter </a>
+					<a href="letter.html"> <i class="fas fa-archive"></i> Max letter </a>
 				</li>
 				<li>
-					<a href="/pages/searchLetter.html">
-						<i class="fas fa-search"></i> Search Letter</a
-					>
+					<a href="searchLetter.html"> <i class="fas fa-search"></i> Search Letter</a>
 				</li>
 			</ul>
 			<button id="myclick" class="buttonDarkMode">
@@ -43,11 +39,17 @@
 				<i class="fas fa-bars fa-3x"></i>
 			</button>
 		</div>
-		<div class="welcomeLetter">
-			<h1>Hello, my name is Save</h1>
-			<p class="subtitle">Welcome to my website!</p>
+		<div class="containerCenter">
+			<div class="containerInput">
+				<h2>Binary Convert</h2>
+				<input type="text" id="numbersBinary" />
+				<button id="btnBinary" type="submit"><a>Comprobar</a></button>
+				<hr />
+				<h2>Resultado</h2>
+				<p id="resultBinary">----------</p>
+			</div>
 		</div>
-		<script src="js/index.js"></script>
-		<script src="js/darkMode.js"></script>
+		<script src="../js/binary.js"></script>
+		<script src="../js/darkMode.js"></script>
 	</body>
 </html>
